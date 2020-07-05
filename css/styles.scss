@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  font-weight: 900;
+  color: #2fc4b2;
+}
+
+body {
+  background: #2fc4b2;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.08rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.main-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .container {
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .card {
+    background: #12947f;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    width: 500px;
+
+    h2 {
+      margin: 0.5rem 0;
+      font-weight: 900;
+    }
+
+    .input-text {
+      margin-top: 0.8rem;
+
+      input {
+        width: 100%;
+        padding: 0.6rem 1rem;
+        border-radius: 20px;
+        border: none;
+        margin-bottom: 0.4rem;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .collection {
+      margin: 1rem 0;
+
+      li {
+        background: #fff;
+        padding: 0.3rem 1rem;
+        border-radius: 20px;
+        color: #333;
+        font-weight: 900;
+        position: relative;
+        margin-bottom: 0.7rem;
+
+        a {
+          color: #333;
+          position: absolute;
+          right: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+
+    #add-focus {
+      margin-top: 0.5rem;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 20px;
+      font-weight: 900;
+      background: #2fc4b2;
+      color: #fff;
+      cursor: pointer;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+      transition: all 0.3s ease-in;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        background: #333;
+      }
+    }
+  }
+}
+
+// Focus List
+#focus-list {
+  h2 {
+    font-weight: 900;
+  }
+
+  .input-text {
+    margin-bottom: 0.6rem;
+  }
+
+  .btn {
+    font-weight: 900;
+    background: #2fc4b2;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      background: #333;
+    }
+  }
+}
+
+// Section: footer
+#main-footer {
+  color: #fff;
+
+  p {
+    font-size: 12px;
+  }
+}
